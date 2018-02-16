@@ -58,3 +58,18 @@ def OpenSignalsFileReader (file):
     t = np.arange(len(data)) / float(s_rate) 
     
     return (data, t, header)
+
+if __name__ == '__main__':
+    
+    filename = "FILE_NAME.txt"
+    
+    #shows the content of the file read
+    
+    print (' Header:')
+    print(OpenSignalsFileReader(filename)[2])
+
+    print ('\n Extracted Data:')
+    print(OpenSignalsFileReader(filename)[0])
+    
+    print ('\n Time line:')
+    print(OpenSignalsFileReader(filename)[1])
