@@ -58,6 +58,3 @@ def OpenSignalsFileReader (file):
     t = np.arange(len(data)) / float(s_rate) 
     
     return (data, t, header)
-
-#print(OpenSignalsFileReader('SampleECG.txt'))
-
